@@ -188,6 +188,7 @@ button:hover{filter:brightness(1.1)}
 .site-footer{position:relative;border-top:1px solid var(--border);padding:2.5rem 0;text-align:center;color:var(--muted)}
 .footer-gradient{position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent)}
 
+
 /* Responsive */
 @media (max-width: 900px){
   .hero{grid-template-columns:1fr}
