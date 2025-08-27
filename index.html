@@ -19,7 +19,6 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#raspberry-videos">Videos</a></li>
             <li><a href="#contact" class="cta">Contact</a></li>
           </ul>
           <div class="mobile-menu-toggle">
@@ -220,24 +219,39 @@
       </div>
       <p class="project-desc">Hands-on builds and experiments using Raspberry Pi and soldering. Here are a few demos in action.</p>
       <div class="video-grid thumbs">
-        <div class="video-thumb" data-video-src="images/rpi/video_1.mp4" data-caption="Raspberry Pi demo 1">
-          <video muted playsinline preload="metadata"><source src="images/rpi/video_1.mp4" type="video/mp4"></video>
-          <span class="play-badge" aria-hidden="true">▶</span>
+        <div class="video-container">
+          <video controls preload="metadata" data-caption="Raspberry Pi demo 1">
+            <source src="images/rpi/video_1.mp4" type="video/mp4">
+          </video>
+          <div class="video-caption">
+            <h4>Motion Detection System</h4>
+            <p>Using Raspberry Pi to detect joystick motion sensors through a custom soldering project. This build demonstrates hardware integration and real-time sensor data processing.</p>
+          </div>
         </div>
-        <div class="video-thumb" data-video-src="images/rpi/video_2.mp4" data-caption="Raspberry Pi demo 2">
-          <video muted playsinline preload="metadata"><source src="images/rpi/video_2.mp4" type="video/mp4"></video>
-          <span class="play-badge" aria-hidden="true">▶</span>
+        <div class="video-container">
+          <video controls preload="metadata" data-caption="Raspberry Pi demo 2">
+            <source src="images/rpi/video_2.mp4" type="video/mp4">
+          </video>
+          <div class="video-caption">
+            <h4>LED Brightness Control</h4>
+            <p>Using potentiometers to control LED light brightness with analog input processing. This project showcases variable resistance control and PWM output techniques.</p>
+          </div>
         </div>
-        <div class="video-thumb" data-video-src="images/rpi/video_3.mp4" data-caption="Raspberry Pi demo 3">
-          <video muted playsinline preload="metadata"><source src="images/rpi/video_3.mp4" type="video/mp4"></video>
-          <span class="play-badge" aria-hidden="true">▶</span>
+        <div class="video-container">
+          <video controls preload="metadata" data-caption="Raspberry Pi demo 3">
+            <source src="images/rpi/video_3.mp4" type="video/mp4">
+          </video>
+          <div class="video-caption">
+            <h4>Automatic LED Dimming</h4>
+            <p>Playing with LED lights to create automatic dimming effects that turn on and off programmatically. Features timed sequences and ambient lighting patterns.</p>
+          </div>
         </div>
       </div>
     </article>
   </div>
 
   <!-- Certificates Section -->
-  <div class="projects-grid container">
+  <div id="certificates" class="projects-grid container">
     <article class="project-card wide">
       <div class="project-head">
         <h3>Certificates & Courses</h3>
@@ -414,6 +428,34 @@
   </div>
 </section>
 
+<!-- Contact Section -->
+<section id="contact" class="reveal">
+  <div class="container">
+    <h2>Get In Touch</h2>
+    <p class="contact-intro">Want to say hello? I'd love to hear from you!</p>
+    
+    <div class="contact-content">
+      <form class="contact-form" action="mailto:zuhayr.ahmed714@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn contact-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
 
   <script>
     // Mobile menu toggle
@@ -456,9 +498,111 @@
             top: targetPosition,
             behavior: 'smooth'
           });
+          
+          // Update active state
+          document.querySelectorAll('.nav-menu a').forEach(link => link.classList.remove('active'));
+          this.classList.add('active');
         }
       });
     });
+    
+    // Set active nav item based on scroll position
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollPos = window.scrollY + header.offsetHeight + 100;
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+          document.querySelectorAll('.nav-menu a').forEach(link => link.classList.remove('active'));
+          const activeLink = document.querySelector(`.nav-menu a[href="#${sectionId}"]`);
+          if (activeLink) activeLink.classList.add('active');
+        }
+      });
+    });
+
+    // Gallery functionality
+    document.querySelectorAll('[data-gallery]').forEach(gallery => {
+      const track = gallery.querySelector('.gallery-track');
+      const images = track.querySelectorAll('img');
+      const prevBtn = gallery.querySelector('[data-prev]');
+      const nextBtn = gallery.querySelector('[data-next]');
+      const dotsContainer = gallery.querySelector('.gallery-dots');
+      const caption = gallery.querySelector('.gallery-caption');
+      
+      let currentIndex = 0;
+      
+      // Create dots
+      images.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.className = `gallery-dot ${index === 0 ? 'active' : ''}`;
+        dot.addEventListener('click', () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+      });
+      
+      const dots = dotsContainer.querySelectorAll('.gallery-dot');
+      
+      function updateGallery() {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        // Update dots
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentIndex);
+        });
+        
+        // Update caption
+        const currentImage = images[currentIndex];
+        caption.textContent = currentImage.dataset.caption || '';
+      }
+      
+      function goToSlide(index) {
+        currentIndex = index;
+        updateGallery();
+      }
+      
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateGallery();
+      }
+      
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateGallery();
+      }
+      
+      // Event listeners
+      if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+      if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+      
+      // Click on image to view full size
+      images.forEach(img => {
+        img.addEventListener('click', () => {
+          const modal = document.createElement('div');
+          modal.className = 'image-modal';
+          modal.innerHTML = `
+            <div class="modal-content">
+              <img src="${img.src}" alt="${img.alt}">
+              <button class="modal-close">&times;</button>
+            </div>
+          `;
+          document.body.appendChild(modal);
+          
+          modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target.className === 'modal-close') {
+              document.body.removeChild(modal);
+            }
+          });
+        });
+      });
+      
+      // Initialize
+      updateGallery();
+    });
+
+    // Video functionality - videos are now directly playable, no modal needed
   </script>
 </body>
 </html>
