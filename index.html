@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zuhayr Ahmed | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zuhayr Ahmed Portfolio</title>
 </head>
 <body>
 
-<!-- Header / Navigation -->
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a href="#home" class="logo">ZA</a>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#raspberry-videos">Videos</a>
-      <a href="#contact" class="cta">Contact</a>
-    </nav>
-  </div>
-  <div class="header-glow"></div>
-  <div class="header-gradient"></div>
-</header>
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="navdiv">
+          <div class="logo">
+            <a href="#home">ZA</a>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#raspberry-videos">Videos</a></li>
+            <li><a href="#contact" class="cta">Contact</a></li>
+          </ul>
+          <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="header-gradient"></div>
+  </header>
 
-<!-- Landing Section -->
+  <!-- Landing Section -->
 <section id="home" class="reveal">
-  <div class="container hero">
+  <div class="container-hero">
     <div class="hero-content">
       <h1>Hey, I'm <span class="accent">Zuhayr Ahmed</span></h1>
       <p>I'm a freshman university student with a passion for coding, building projects, and learning new technologies. With three years of experience, I'm always looking for new challenges to grow my skills.</p>
@@ -42,16 +50,19 @@
       <div class="orb orb-3"></div>
     </div>
   </div>
-  
 </section>
+
 
 <!-- About Section -->
 <section id="about" class="reveal">
-  <h2>About Me</h2>
-  <p>
-    I'm a freshman university student who's been coding for about 3 years now. I love building projects, solving complex problems, and diving deep into real-world technologies. Whether it's through platforms like Leetcode, building GUI apps with JavaFX, tinkering with Raspberry Pi, or expanding my skills through courses and books, I'm passionate about growing as a programmer.
-  </p>
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I'm a freshman university student who's been coding for about 3 years now. I love building projects, solving complex problems, and diving deep into real-world technologies. Whether it's through platforms like Leetcode, building GUI apps with JavaFX, tinkering with Raspberry Pi, or expanding my skills through courses and books, I'm passionate about growing as a programmer.
+    </p>
+  </div>
 </section>
+
 
 <!-- Projects Section -->
 <section id="projects" class="reveal">
@@ -100,12 +111,99 @@
     <article class="project-card">
       <div class="project-head">
         <h3>Books I’m Learning From</h3>
-        <span class="tag">Learning • Reading</span>
+        <span class="tag">Reading</span>
       </div>
       <p class="project-desc">A growing collection of programming and CS books that guide my fundamentals and depth.</p>
       <div class="gallery" data-gallery>
         <div class="gallery-track single">
           <img src="images/Books/books.jpg" alt="Books collection" data-caption="Current reading stack">
+        </div>
+        <div class="gallery-caption" aria-live="polite"></div>
+      </div>
+    </article>
+
+    <!-- Leetcode -->
+    <article class="project-card">
+      <div class="project-head">
+        <h3>Leetcode</h3>
+        <span class="tag">Algorithms • Problem Solving</span>
+      </div>
+      <p class="project-desc">I enjoy solving Leetcode problems in my free time to sharpen my algorithmic thinking and data structure skills. It's a great way to practice for technical interviews and challenge myself with different problem patterns.</p>
+      <div class="gallery" data-gallery>
+        <div class="gallery-track single">
+          <img src="images/Leetcode/Leetcode_Info.png" alt="Leetcode progress" data-caption="My Leetcode journey and problem-solving stats">
+        </div>
+        <div class="gallery-caption" aria-live="polite"></div>
+      </div>
+    </article>
+
+    <!-- 2D Java Game -->
+    <article class="project-card">
+      <div class="project-head">
+        <h3>2D Java Game</h3>
+        <span class="tag">Game Development</span>
+      </div>
+      <p class="project-desc">I once worked on this 2D game developed in Java to explore what game development is like. It was a great learning experience that taught me about graphics rendering, game loops, collision detection, and object-oriented design patterns in a fun, interactive context.</p>
+      <div class="gallery" data-gallery>
+        <div class="gallery-track single">
+          <img src="images/2DGame/2D-Game.png" alt="2D Java Game screenshot" data-caption="Gameplay screenshot showing the 2D game mechanics">
+        </div>
+        <div class="gallery-caption" aria-live="polite"></div>
+      </div>
+    </article>
+
+    <!-- Chat Application -->
+    <article class="project-card">
+      <div class="project-head">
+        <h3>Zonnect</h3>
+        <span class="tag">Networking • Real-time</span>
+      </div>
+      <p class="project-desc">I built Zonnect, a chat application that enables two computers on the same network to communicate in real-time. This project taught me about socket programming, network protocols, and client-server architecture. I have plans to expand it into a full-fledged chat app that allows users across different networks to communicate.</p>
+      <div class="gallery" data-gallery>
+        <div class="gallery-track single">
+          <div class="placeholder-image">
+
+
+
+          </div>
+        </div>
+        <div class="gallery-caption" aria-live="polite"></div>
+      </div>
+    </article>
+
+    <!-- Zecure Pass -->
+    <article class="project-card">
+      <div class="project-head">
+        <h3>Zecure Pass</h3>
+        <span class="tag">Android • Kotlin</span>
+      </div>
+      <p class="project-desc">A secure password manager Android app built with Kotlin. Zecure Pass helps users generate, store, and manage their passwords safely with encryption and biometric authentication for enhanced security.</p>
+      <div class="gallery" data-gallery>
+        <div class="gallery-track single">
+          <div class="placeholder-image">
+
+
+
+          </div>
+        </div>
+        <div class="gallery-caption" aria-live="polite"></div>
+      </div>
+    </article>
+
+    <!-- Plant Watering Reminder -->
+    <article class="project-card">
+      <div class="project-head">
+        <h3>Plant Watering Reminder</h3>
+        <span class="tag">Android • Kotlin</span>
+      </div>
+      <p class="project-desc">An Android app built with Kotlin that helps users keep track of their plants' watering schedules. Features include customizable reminders, plant care tips, and a user-friendly interface to manage multiple plants with different watering needs.</p>
+      <div class="gallery" data-gallery>
+        <div class="gallery-track single">
+          <div class="placeholder-image">
+
+
+            
+          </div>
         </div>
         <div class="gallery-caption" aria-live="polite"></div>
       </div>
@@ -136,268 +234,230 @@
       </div>
     </article>
   </div>
+
+  <!-- Certificates Section -->
+  <div class="projects-grid container">
+    <article class="project-card wide">
+      <div class="project-head">
+        <h3>Certificates & Courses</h3>
+        <span class="tag">Learning • Coursera</span>
+      </div>
+      <p class="project-desc">A collection of certificates from various programming and computer science courses I've completed to expand my knowledge and skills.</p>
+      <div class="certificates-grid">
+        <a href="pdfs/Coursera_7.pdf" target="_blank" class="certificate-card">
+          <div class="certificate-preview">
+            <div class="certificate-icon">🤖</div>
+            <div class="certificate-badge">Verified</div>
+          </div>
+          <div class="certificate-info">
+            <h4>IBM AI Developer</h4>
+            <div class="certificate-provider">Coursera</div>
+            <div class="certificate-actions">
+              <span class="view-certificate">View Certificate →</span>
+              <span class="certificate-date">2025</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="pdfs/Coursera_1.pdf" target="_blank" class="certificate-card">
+          <div class="certificate-preview">
+            <div class="certificate-icon">🐍</div>
+            <div class="certificate-badge">Verified</div>
+          </div>
+          <div class="certificate-info">
+            <h4>Developing AI Applications with Python and Flask</h4>
+            <div class="certificate-provider">Coursera</div>
+            <div class="certificate-actions">
+              <span class="view-certificate">View Certificate →</span>
+              <span class="certificate-date">2025</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="pdfs/Coursera_2.pdf" target="_blank" class="certificate-card">
+          <div class="certificate-preview">
+            <div class="certificate-icon">🤖</div>
+            <div class="certificate-badge">Verified</div>
+          </div>
+          <div class="certificate-info">
+            <h4>Building Generative AI-Powered Applications with Python</h4>
+            <div class="certificate-provider">Coursera</div>
+            <div class="certificate-actions">
+              <span class="view-certificate">View Certificate →</span>
+              <span class="certificate-date">2025</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="pdfs/Coursera_3.pdf" target="_blank" class="certificate-card">
+          <div class="certificate-preview">
+            <div class="certificate-icon">🚀</div>
+            <div class="certificate-badge">Verified</div>
+          </div>
+          <div class="certificate-info">
+            <h4>Generative AI: Elevate your Software Development Career</h4>
+            <div class="certificate-provider">Coursera</div>
+            <div class="certificate-actions">
+              <span class="view-certificate">View Certificate →</span>
+              <span class="certificate-date">2025</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="pdfs/Coursera_4.pdf" target="_blank" class="certificate-card">
+          <div class="certificate-preview">
+            <div class="certificate-icon">💬</div>
+            <div class="certificate-badge">Verified</div>
+          </div>
+          <div class="certificate-info">
+            <h4>Generative AI: Prompt Engineering Basics</h4>
+            <div class="certificate-provider">Coursera</div>
+            <div class="certificate-actions">
+              <span class="view-certificate">View Certificate →</span>
+              <span class="certificate-date">2025</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="pdfs/Coursera_5.pdf" target="_blank" class="certificate-card">
+          <div class="certificate-preview">
+            <div class="certificate-icon">🧠</div>
+            <div class="certificate-badge">Verified</div>
+          </div>
+          <div class="certificate-info">
+            <h4>Introduction to Artificial Intelligence (AI)</h4>
+            <div class="certificate-provider">Coursera</div>
+            <div class="certificate-actions">
+              <span class="view-certificate">View Certificate →</span>
+              <span class="certificate-date">2025</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="pdfs/Coursera_6.pdf" target="_blank" class="certificate-card">
+          <div class="certificate-preview">
+            <div class="certificate-icon">⚙️</div>
+            <div class="certificate-badge">Verified</div>
+          </div>
+          <div class="certificate-info">
+            <h4>Introduction to Software Engineering</h4>
+            <div class="certificate-provider">Coursera</div>
+            <div class="certificate-actions">
+              <span class="view-certificate">View Certificate →</span>
+              <span class="certificate-date">2025</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="pdfs/Coursera_8.pdf" target="_blank" class="certificate-card">
+          <div class="certificate-preview">
+            <div class="certificate-icon">🐍</div>
+            <div class="certificate-badge">Verified</div>
+          </div>
+          <div class="certificate-info">
+            <h4>Python for Data Science, AI & Development</h4>
+            <div class="certificate-provider">Coursera</div>
+            <div class="certificate-actions">
+              <span class="view-certificate">View Certificate →</span>
+              <span class="certificate-date">2025</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="pdfs/Coursera_9.pdf" target="_blank" class="certificate-card">
+          <div class="certificate-preview">
+            <div class="certificate-icon">✨</div>
+            <div class="certificate-badge">Verified</div>
+          </div>
+          <div class="certificate-info">
+            <h4>Generative AI: Introduction and Applications</h4>
+            <div class="certificate-provider">Coursera</div>
+            <div class="certificate-actions">
+              <span class="view-certificate">View Certificate →</span>
+              <span class="certificate-date">2025</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="pdfs/Coursera_10.pdf" target="_blank" class="certificate-card">
+          <div class="certificate-preview">
+            <div class="certificate-icon">💼</div>
+            <div class="certificate-badge">Verified</div>
+          </div>
+          <div class="certificate-info">
+            <h4>Software Developer Career Guide and Interview Preparation</h4>
+            <div class="certificate-provider">Coursera</div>
+            <div class="certificate-actions">
+              <span class="view-certificate">View Certificate →</span>
+              <span class="certificate-date">2025</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="pdfs/Coursera_11.pdf" target="_blank" class="certificate-card">
+          <div class="certificate-preview">
+            <div class="certificate-icon">🌐</div>
+            <div class="certificate-badge">Verified</div>
+          </div>
+          <div class="certificate-info">
+            <h4>Introduction to HTML, CSS & Javascript</h4>
+            <div class="certificate-provider">Coursera</div>
+            <div class="certificate-actions">
+              <span class="view-certificate">View Certificate →</span>
+              <span class="certificate-date">2025</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </article>
+  </div>
 </section>
 
-<!-- Certificates Section -->
-<section id="certificates" class="reveal">
-  <h2>Certificates</h2>
-  <p>Here are my Coursera certificates. Click a card to preview without leaving the page.</p>
-  <div class="certificates-grid">
-    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_1.pdf">
-      <div class="cert-icon" aria-hidden="true">📄</div>
-      <div class="cert-info">
-        <h4>Developing AI Applications with Python and Flask</h4>
-        <p>Open in quick preview</p>
-      </div>
-      <button class="btn tiny">View</button>
-    </div>
-    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_2.pdf">
-      <div class="cert-icon" aria-hidden="true">📄</div>
-      <div class="cert-info">
-        <h4>Building Generative AI-Powered Applications with
-          Python</h4>
-        <p>Open in quick preview</p>
-      </div>
-      <button class="btn tiny">View</button>
-    </div>
-    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_3.pdf">
-      <div class="cert-icon" aria-hidden="true">📄</div>
-      <div class="cert-info">
-        <h4>Generative AI: Elevate your Software Development
-          Career</h4>
-        <p>Open in quick preview</p>
-      </div>
-      <button class="btn tiny">View</button>
-    </div>
-    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_4.pdf">
-      <div class="cert-icon" aria-hidden="true">📄</div>
-      <div class="cert-info">
-        <h4>Generative AI: Prompt Engineering Basics</h4>
-        <p>Open in quick preview</p>
-      </div>
-      <button class="btn tiny">View</button>
-    </div>
-    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_5.pdf">
-      <div class="cert-icon" aria-hidden="true">📄</div>
-      <div class="cert-info">
-        <h4>Introduction to Artificial Intelligence (AI)</h4>
-        <p>Open in quick preview</p>
-      </div>
-      <button class="btn tiny">View</button>
-    </div>
-    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_6.pdf">
-      <div class="cert-icon" aria-hidden="true">📄</div>
-      <div class="cert-info">
-        <h4>Introduction to Software Engineering</h4>
-        <p>Open in quick preview</p>
-      </div>
-      <button class="btn tiny">View</button>
-    </div>
-    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_7.pdf">
-      <div class="cert-icon" aria-hidden="true">📄</div>
-      <div class="cert-info">
-        <h4>IBM AI Developer</h4>
-        <p>Open in quick preview</p>
-      </div>
-      <button class="btn tiny">View</button>
-    </div>
-    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_8.pdf">
-      <div class="cert-icon" aria-hidden="true">📄</div>
-      <div class="cert-info">
-        <h4>Generative AI: Introduction and Applications</h4>
-        <p>Open in quick preview</p>
-      </div>
-      <button class="btn tiny">View</button>
-    </div>
-    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_9.pdf">
-      <div class="cert-icon" aria-hidden="true">📄</div>
-      <div class="cert-info">
-        <h4>Generative AI: Introduction and Applications</h4>
-        <p>Open in quick preview</p>
-      </div>
-      <button class="btn tiny">View</button>
-    </div>
-    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_10.pdf">
-      <div class="cert-icon" aria-hidden="true">📄</div>
-      <div class="cert-info">
-        <h4>Software Developer Career Guide and Interview
-          Preparation</h4>
-        <p>Open in quick preview</p>
-      </div>
-      <button class="btn tiny">View</button>
-    </div>
-  </div>
 
-  <!-- Modal for PDF preview -->
-  <div id="pdfModal" class="modal" aria-hidden="true" role="dialog" aria-label="PDF Preview" tabindex="-1">
-    <div class="modal-backdrop" data-close></div>
-    <div class="modal-content" role="document">
-      <button class="modal-close" aria-label="Close" data-close>&times;</button>
-      <iframe id="pdfFrame" title="Certificate Preview" loading="lazy"></iframe>
-      <div class="modal-actions">
-        <a id="openNewTab" class="btn secondary-btn tiny" target="_blank" rel="noopener">Open in new tab</a>
-      </div>
-    </div>
-  </div>
-</section>
+  <script>
+    // Mobile menu toggle
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const header = document.querySelector('.site-header');
 
+    mobileToggle.addEventListener('click', () => {
+      mobileToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
 
-<!-- Contact Section -->
-<section id="contact" class="reveal">
-  <h2>Contact Me</h2>
-  <p>Feel free to reach out to me!</p>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
-
-<footer class="site-footer">
-  <div class="container">
-    <p>© <span id="year"></span> Zuhayr Ahmed. All rights reserved.</p>
-  </div>
-  <div class="footer-gradient"></div>
-</footer>
-
-<script>
-  // Update year
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Scroll reveal
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        observer.unobserve(entry.target);
+    // Close mobile menu when clicking on a link
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        mobileToggle.classList.remove('active');
+        navMenu.classList.remove('active');
       }
     });
-  }, { threshold: 0.15 });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // PDF modal
-  const modal = document.getElementById('pdfModal');
-  const pdfFrame = document.getElementById('pdfFrame');
-  const openNewTab = document.getElementById('openNewTab');
-  function openModal(src){
-    pdfFrame.src = src;
-    openNewTab.href = src;
-    modal.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('no-scroll');
-  }
-  function closeModal(){
-    modal.setAttribute('aria-hidden', 'true');
-    pdfFrame.src = '';
-    document.body.classList.remove('no-scroll');
-  }
-  document.querySelectorAll('.cert-card').forEach(card => {
-    const src = card.getAttribute('data-pdf');
-    card.addEventListener('click', (e) => {
-      if(e.target.closest('button')){
-        openModal(src);
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
       }
     });
-  });
-  modal.addEventListener('click', (e) => {
-    if (e.target.hasAttribute('data-close') || e.target.classList.contains('modal')) closeModal();
-  });
-  document.addEventListener('keydown', (e)=>{
-    if(e.key === 'Escape') closeModal();
-  });
 
-  // Smooth sticky header background toggle
-  const header = document.querySelector('.site-header');
-  window.addEventListener('scroll', ()=>{
-    header.classList.toggle('scrolled', window.scrollY > 10);
-  });
-  
-  // Lightweight carousel for galleries
-  function initGallery(gallery){
-    const track = gallery.querySelector('.gallery-track');
-    const slides = Array.from(track.children);
-    const prev = gallery.querySelector('[data-prev]');
-    const next = gallery.querySelector('[data-next]');
-    const dotsWrap = gallery.querySelector('.gallery-dots');
-    const captionEl = gallery.querySelector('.gallery-caption');
-    if(slides.length <= 1){
-      if(prev) prev.style.display='none';
-      if(next) next.style.display='none';
-      // caption for single image
-      if(captionEl && slides[0]){
-        const cap = slides[0].getAttribute('data-caption') || slides[0].getAttribute('alt') || '';
-        captionEl.textContent = cap;
-      }
-      // enable lightbox on click for single image
-      slides.forEach(img=>img.addEventListener('click', ()=>openLightboxImage(img.src, img.getAttribute('data-caption')||img.alt||'')));
-      return;
-    }
-    let index = 0;
-    slides.forEach((_,i)=>{
-      const dot = document.createElement('button');
-      dot.className = 'dot' + (i===0?' active':'');
-      dot.addEventListener('click', ()=>goTo(i));
-      dotsWrap.appendChild(dot);
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const headerHeight = header.offsetHeight;
+          const targetPosition = target.offsetTop - headerHeight;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
     });
-    const dots = Array.from(dotsWrap.children);
-    function goTo(i){
-      index = (i+slides.length)%slides.length;
-      track.style.transform = `translateX(-${index*100}%)`;
-      dots.forEach((d,di)=>d.classList.toggle('active', di===index));
-      if(captionEl){
-        const cap = slides[index].getAttribute('data-caption') || slides[index].getAttribute('alt') || '';
-        captionEl.textContent = cap;
-      }
-    }
-    prev && prev.addEventListener('click', ()=>goTo(index-1));
-    next && next.addEventListener('click', ()=>goTo(index+1));
-    // swipe
-    let startX=0, dx=0; 
-    track.addEventListener('touchstart', e=>{startX=e.touches[0].clientX; dx=0;},{passive:true});
-    track.addEventListener('touchmove', e=>{dx=e.touches[0].clientX-startX;},{passive:true});
-    track.addEventListener('touchend', ()=>{ if(Math.abs(dx)>40){ dx>0?goTo(index-1):goTo(index+1);} });
-
-    // init first caption and enable lightbox on click
-    goTo(0);
-    slides.forEach(img=>img.addEventListener('click', ()=>openLightboxImage(img.src, img.getAttribute('data-caption')||img.alt||'')));
-  }
-  document.querySelectorAll('[data-gallery]').forEach(initGallery);
-
-  // Lightbox for images and videos
-  const lightbox = document.createElement('div');
-  lightbox.className = 'lightbox';
-  lightbox.setAttribute('aria-hidden','true');
-  lightbox.innerHTML = `
-    <div class="lightbox-backdrop" data-close></div>
-    <div class="lightbox-content" role="dialog" aria-modal="true">
-      <button class="lightbox-close" aria-label="Close" data-close>×</button>
-      <div class="lightbox-media-wrap"></div>
-      <div class="lightbox-caption" aria-live="polite"></div>
-    </div>`;
-  document.body.appendChild(lightbox);
-
-  function openLightboxImage(src, caption=''){
-    const wrap = lightbox.querySelector('.lightbox-media-wrap');
-    wrap.innerHTML = `<img src="${src}" alt="">`;
-    lightbox.querySelector('.lightbox-caption').textContent = caption;
-    lightbox.setAttribute('aria-hidden','false');
-  }
-  function openLightboxVideo(src, caption=''){
-    const wrap = lightbox.querySelector('.lightbox-media-wrap');
-    wrap.innerHTML = `<video controls autoplay style="max-height:70vh"><source src="${src}" type="video/mp4"></video>`;
-    lightbox.querySelector('.lightbox-caption').textContent = caption;
-    lightbox.setAttribute('aria-hidden','false');
-  }
-  lightbox.addEventListener('click', e=>{ if(e.target.hasAttribute('data-close')) lightbox.setAttribute('aria-hidden','true'); });
-  document.addEventListener('keydown', e=>{ if(e.key==='Escape') lightbox.setAttribute('aria-hidden','true'); });
-
-  // Raspberry Pi video thumbs -> lightbox
-  document.querySelectorAll('.video-thumb').forEach(el=>{
-    el.addEventListener('click', ()=>{
-      openLightboxVideo(el.getAttribute('data-video-src'), el.getAttribute('data-caption')||'');
-    });
-  });
-</script>
-
+  </script>
 </body>
 </html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zuhayr Ahmed | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="old-style.css">
+</head>
+<body>
+
+<!-- Header / Navigation -->
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="#home" class="logo">ZA</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#raspberry-videos">Videos</a>
+      <a href="#contact" class="cta">Contact</a>
+    </nav>
+  </div>
+  <div class="header-glow"></div>
+  <div class="header-gradient"></div>
+</header>
+
+<!-- Landing Section -->
+<section id="home" class="reveal">
+  <div class="container hero">
+    <div class="hero-content">
+      <h1>Hey, I'm <span class="accent">Zuhayr Ahmed</span></h1>
+      <p>I'm a freshman university student with a passion for coding, building projects, and learning new technologies. With three years of experience, I'm always looking for new challenges to grow my skills.</p>
+      <div class="btn-group">
+        <a href="#about" class="btn secondary-btn">About Me</a>
+        <a href="#projects" class="btn">My Work</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+  </div>
+  
+</section>
+
+<!-- About Section -->
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <p>
+    I'm a freshman university student who's been coding for about 3 years now. I love building projects, solving complex problems, and diving deep into real-world technologies. Whether it's through platforms like Leetcode, building GUI apps with JavaFX, tinkering with Raspberry Pi, or expanding my skills through courses and books, I'm passionate about growing as a programmer.
+  </p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div class="projects-grid container">
+    <!-- BUdgetManager App -->
+    <article class="project-card">
+      <div class="project-head">
+        <h3>Budget Manager</h3>
+        <span class="tag">JavaFX • Desktop App</span>
+      </div>
+      <p class="project-desc">A personal finance desktop app to track expenses, visualize budgets, and manage categories with an intuitive UI.</p>
+      <div class="gallery" data-gallery>
+        <div class="gallery-track">
+          <img src="images/BudgetManager/image_1.png" alt="Budget Manager screenshot 1" data-caption="Dashboard overview with spending by category">
+          <img src="images/BudgetManager/image_2.png" alt="Budget Manager screenshot 2" data-caption="Add and edit expense entries quickly">
+          <img src="images/BudgetManager/image_3.png" alt="Budget Manager screenshot 3" data-caption="Monthly charts and budget progress">
+        </div>
+        <button class="gallery-btn prev" aria-label="Previous image" data-prev>‹</button>
+        <button class="gallery-btn next" aria-label="Next image" data-next>›</button>
+        <div class="gallery-dots" aria-hidden="true"></div>
+        <div class="gallery-caption" aria-live="polite"></div>
+      </div>
+    </article>
+
+    <!-- TradezStocks App -->
+    <article class="project-card">
+      <div class="project-head">
+        <h3>TradezStocks</h3>
+        <span class="tag">Stocks • Tools</span>
+      </div>
+      <p class="project-desc">A lightweight toolkit for tracking tickers, visualizing trends, and experimenting with trading strategies.</p>
+      <div class="gallery" data-gallery>
+        <div class="gallery-track">
+          <img src="images/TradezStocks/image_1.jpg" alt="TradezStocks screenshot 1" data-caption="Price chart and indicators">
+          <img src="images/TradezStocks/image_2.png" alt="TradezStocks screenshot 2" data-caption="Watchlist and ticker details">
+        </div>
+        <button class="gallery-btn prev" aria-label="Previous image" data-prev>‹</button>
+        <button class="gallery-btn next" aria-label="Next image" data-next>›</button>
+        <div class="gallery-dots" aria-hidden="true"></div>
+        <div class="gallery-caption" aria-live="polite"></div>
+      </div>
+    </article>
+
+    <!-- Books -->
+    <article class="project-card">
+      <div class="project-head">
+        <h3>Books I’m Learning From</h3>
+        <span class="tag">Learning • Reading</span>
+      </div>
+      <p class="project-desc">A growing collection of programming and CS books that guide my fundamentals and depth.</p>
+      <div class="gallery" data-gallery>
+        <div class="gallery-track single">
+          <img src="images/Books/books.jpg" alt="Books collection" data-caption="Current reading stack">
+        </div>
+        <div class="gallery-caption" aria-live="polite"></div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Raspberry Pi videos showcase -->
+  <div class="projects-grid container">
+    <article class="project-card wide">
+      <div class="project-head">
+        <h3>Raspberry Pi Projects</h3>
+        <span class="tag">Hardware • Python</span>
+      </div>
+      <p class="project-desc">Hands-on builds and experiments using Raspberry Pi and soldering. Here are a few demos in action.</p>
+      <div class="video-grid thumbs">
+        <div class="video-thumb" data-video-src="images/rpi/video_1.mp4" data-caption="Raspberry Pi demo 1">
+          <video muted playsinline preload="metadata"><source src="images/rpi/video_1.mp4" type="video/mp4"></video>
+          <span class="play-badge" aria-hidden="true">▶</span>
+        </div>
+        <div class="video-thumb" data-video-src="images/rpi/video_2.mp4" data-caption="Raspberry Pi demo 2">
+          <video muted playsinline preload="metadata"><source src="images/rpi/video_2.mp4" type="video/mp4"></video>
+          <span class="play-badge" aria-hidden="true">▶</span>
+        </div>
+        <div class="video-thumb" data-video-src="images/rpi/video_3.mp4" data-caption="Raspberry Pi demo 3">
+          <video muted playsinline preload="metadata"><source src="images/rpi/video_3.mp4" type="video/mp4"></video>
+          <span class="play-badge" aria-hidden="true">▶</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Certificates Section -->
+<section id="certificates" class="reveal">
+  <h2>Certificates</h2>
+  <p>Here are my Coursera certificates. Click a card to preview without leaving the page.</p>
+  <div class="certificates-grid">
+    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_1.pdf">
+      <div class="cert-icon" aria-hidden="true">📄</div>
+      <div class="cert-info">
+        <h4>Developing AI Applications with Python and Flask</h4>
+        <p>Open in quick preview</p>
+      </div>
+      <button class="btn tiny">View</button>
+    </div>
+    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_2.pdf">
+      <div class="cert-icon" aria-hidden="true">📄</div>
+      <div class="cert-info">
+        <h4>Building Generative AI-Powered Applications with
+          Python</h4>
+        <p>Open in quick preview</p>
+      </div>
+      <button class="btn tiny">View</button>
+    </div>
+    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_3.pdf">
+      <div class="cert-icon" aria-hidden="true">📄</div>
+      <div class="cert-info">
+        <h4>Generative AI: Elevate your Software Development
+          Career</h4>
+        <p>Open in quick preview</p>
+      </div>
+      <button class="btn tiny">View</button>
+    </div>
+    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_4.pdf">
+      <div class="cert-icon" aria-hidden="true">📄</div>
+      <div class="cert-info">
+        <h4>Generative AI: Prompt Engineering Basics</h4>
+        <p>Open in quick preview</p>
+      </div>
+      <button class="btn tiny">View</button>
+    </div>
+    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_5.pdf">
+      <div class="cert-icon" aria-hidden="true">📄</div>
+      <div class="cert-info">
+        <h4>Introduction to Artificial Intelligence (AI)</h4>
+        <p>Open in quick preview</p>
+      </div>
+      <button class="btn tiny">View</button>
+    </div>
+    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_6.pdf">
+      <div class="cert-icon" aria-hidden="true">📄</div>
+      <div class="cert-info">
+        <h4>Introduction to Software Engineering</h4>
+        <p>Open in quick preview</p>
+      </div>
+      <button class="btn tiny">View</button>
+    </div>
+    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_7.pdf">
+      <div class="cert-icon" aria-hidden="true">📄</div>
+      <div class="cert-info">
+        <h4>IBM AI Developer</h4>
+        <p>Open in quick preview</p>
+      </div>
+      <button class="btn tiny">View</button>
+    </div>
+    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_8.pdf">
+      <div class="cert-icon" aria-hidden="true">📄</div>
+      <div class="cert-info">
+        <h4>Generative AI: Introduction and Applications</h4>
+        <p>Open in quick preview</p>
+      </div>
+      <button class="btn tiny">View</button>
+    </div>
+    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_9.pdf">
+      <div class="cert-icon" aria-hidden="true">📄</div>
+      <div class="cert-info">
+        <h4>Generative AI: Introduction and Applications</h4>
+        <p>Open in quick preview</p>
+      </div>
+      <button class="btn tiny">View</button>
+    </div>
+    <div class="certificate-card cert-card" data-pdf="pdfs/Coursera_10.pdf">
+      <div class="cert-icon" aria-hidden="true">📄</div>
+      <div class="cert-info">
+        <h4>Software Developer Career Guide and Interview
+          Preparation</h4>
+        <p>Open in quick preview</p>
+      </div>
+      <button class="btn tiny">View</button>
+    </div>
+  </div>
+
+  <!-- Modal for PDF preview -->
+  <div id="pdfModal" class="modal" aria-hidden="true" role="dialog" aria-label="PDF Preview" tabindex="-1">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Close" data-close>&times;</button>
+      <iframe id="pdfFrame" title="Certificate Preview" loading="lazy"></iframe>
+      <div class="modal-actions">
+        <a id="openNewTab" class="btn secondary-btn tiny" target="_blank" rel="noopener">Open in new tab</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="reveal">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out to me!</p>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Zuhayr Ahmed. All rights reserved.</p>
+  </div>
+  <div class="footer-gradient"></div>
+</footer>
+
+<script>
+  // Update year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // PDF modal
+  const modal = document.getElementById('pdfModal');
+  const pdfFrame = document.getElementById('pdfFrame');
+  const openNewTab = document.getElementById('openNewTab');
+  function openModal(src){
+    pdfFrame.src = src;
+    openNewTab.href = src;
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('no-scroll');
+  }
+  function closeModal(){
+    modal.setAttribute('aria-hidden', 'true');
+    pdfFrame.src = '';
+    document.body.classList.remove('no-scroll');
+  }
+  document.querySelectorAll('.cert-card').forEach(card => {
+    const src = card.getAttribute('data-pdf');
+    card.addEventListener('click', (e) => {
+      if(e.target.closest('button')){
+        openModal(src);
+      }
+    });
+  });
+  modal.addEventListener('click', (e) => {
+    if (e.target.hasAttribute('data-close') || e.target.classList.contains('modal')) closeModal();
+  });
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') closeModal();
+  });
+
+  // Smooth sticky header background toggle
+  const header = document.querySelector('.site-header');
+  window.addEventListener('scroll', ()=>{
+    header.classList.toggle('scrolled', window.scrollY > 10);
+  });
+  
+  // Lightweight carousel for galleries
+  function initGallery(gallery){
+    const track = gallery.querySelector('.gallery-track');
+    const slides = Array.from(track.children);
+    const prev = gallery.querySelector('[data-prev]');
+    const next = gallery.querySelector('[data-next]');
+    const dotsWrap = gallery.querySelector('.gallery-dots');
+    const captionEl = gallery.querySelector('.gallery-caption');
+    if(slides.length <= 1){
+      if(prev) prev.style.display='none';
+      if(next) next.style.display='none';
+      // caption for single image
+      if(captionEl && slides[0]){
+        const cap = slides[0].getAttribute('data-caption') || slides[0].getAttribute('alt') || '';
+        captionEl.textContent = cap;
+      }
+      // enable lightbox on click for single image
+      slides.forEach(img=>img.addEventListener('click', ()=>openLightboxImage(img.src, img.getAttribute('data-caption')||img.alt||'')));
+      return;
+    }
+    let index = 0;
+    slides.forEach((_,i)=>{
+      const dot = document.createElement('button');
+      dot.className = 'dot' + (i===0?' active':'');
+      dot.addEventListener('click', ()=>goTo(i));
+      dotsWrap.appendChild(dot);
+    });
+    const dots = Array.from(dotsWrap.children);
+    function goTo(i){
+      index = (i+slides.length)%slides.length;
+      track.style.transform = `translateX(-${index*100}%)`;
+      dots.forEach((d,di)=>d.classList.toggle('active', di===index));
+      if(captionEl){
+        const cap = slides[index].getAttribute('data-caption') || slides[index].getAttribute('alt') || '';
+        captionEl.textContent = cap;
+      }
+    }
+    prev && prev.addEventListener('click', ()=>goTo(index-1));
+    next && next.addEventListener('click', ()=>goTo(index+1));
+    // swipe
+    let startX=0, dx=0; 
+    track.addEventListener('touchstart', e=>{startX=e.touches[0].clientX; dx=0;},{passive:true});
+    track.addEventListener('touchmove', e=>{dx=e.touches[0].clientX-startX;},{passive:true});
+    track.addEventListener('touchend', ()=>{ if(Math.abs(dx)>40){ dx>0?goTo(index-1):goTo(index+1);} });
+
+    // init first caption and enable lightbox on click
+    goTo(0);
+    slides.forEach(img=>img.addEventListener('click', ()=>openLightboxImage(img.src, img.getAttribute('data-caption')||img.alt||'')));
+  }
+  document.querySelectorAll('[data-gallery]').forEach(initGallery);
+
+  // Lightbox for images and videos
+  const lightbox = document.createElement('div');
+  lightbox.className = 'lightbox';
+  lightbox.setAttribute('aria-hidden','true');
+  lightbox.innerHTML = `
+    <div class="lightbox-backdrop" data-close></div>
+    <div class="lightbox-content" role="dialog" aria-modal="true">
+      <button class="lightbox-close" aria-label="Close" data-close>×</button>
+      <div class="lightbox-media-wrap"></div>
+      <div class="lightbox-caption" aria-live="polite"></div>
+    </div>`;
+  document.body.appendChild(lightbox);
+
+  function openLightboxImage(src, caption=''){
+    const wrap = lightbox.querySelector('.lightbox-media-wrap');
+    wrap.innerHTML = `<img src="${src}" alt="">`;
+    lightbox.querySelector('.lightbox-caption').textContent = caption;
+    lightbox.setAttribute('aria-hidden','false');
+  }
+  function openLightboxVideo(src, caption=''){
+    const wrap = lightbox.querySelector('.lightbox-media-wrap');
+    wrap.innerHTML = `<video controls autoplay style="max-height:70vh"><source src="${src}" type="video/mp4"></video>`;
+    lightbox.querySelector('.lightbox-caption').textContent = caption;
+    lightbox.setAttribute('aria-hidden','false');
+  }
+  lightbox.addEventListener('click', e=>{ if(e.target.hasAttribute('data-close')) lightbox.setAttribute('aria-hidden','true'); });
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape') lightbox.setAttribute('aria-hidden','true'); });
+
+  // Raspberry Pi video thumbs -> lightbox
+  document.querySelectorAll('.video-thumb').forEach(el=>{
+    el.addEventListener('click', ()=>{
+      openLightboxVideo(el.getAttribute('data-video-src'), el.getAttribute('data-caption')||'');
+    });
+  });
+</script>
+
+</body>
+</html>
