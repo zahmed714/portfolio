@@ -434,7 +434,7 @@
       }
     });
 
-
+    // Header scroll effect
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
         header.classList.add('scrolled');
@@ -443,6 +443,7 @@
       }
     });
 
+    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
