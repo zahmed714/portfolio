@@ -1,0 +1,14 @@
+.site-header {
+    position: sticky;
+}
+
+.navbar {
+    background: crimson;
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navdiv {
+    
+}
