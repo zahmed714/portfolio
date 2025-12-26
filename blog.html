@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Learning Blog | Zuhayr Ahmed</title>
 </head>
+
 <body class="blog-page">
   <header class="site-header">
     <div class="container">
@@ -46,7 +48,39 @@
   <section id="posts" class="blog-posts">
     <div class="container">
       <div class="blog-list">
-        <article class="blog-card open" id="dec-24-2025">
+        <article class="blog-card open" id="dec-25-2025">
+          <div class="blog-card-header">
+            <div>
+              <div class="blog-meta">
+                <span class="blog-date">Dec 25, 2025</span>
+              </div>
+              <h3 class="blog-card-title">Evaluating Binary Classifiers</h3>
+            </div>
+            <button class="blog-toggle" data-toggle-post aria-expanded="true">Collapse</button>
+          </div>
+
+          <div class="blog-card-content">
+            <div class="blog-card-copy">
+              <p>I spent some time really breaking down how to evaluate a binary classifier using more than just a basic
+                accuracy score by looking at the conditional probabilities of <strong>sensitivity</strong> and
+                <strong>specificity</strong>. Sensitivity is the probability of a positive test given that the disease
+                is actually present (P(Test + | Disease)), while specificity is the probability of a negative test given
+                the person is healthy (P(Test - | Healthy)).</p>
+              <p>I also looked into how <strong>prevalence</strong>, or the overall probability of the disease in the
+                population (P(Disease)), influences these results and the overall predictive power of the model. It was
+                interesting to see the mathematical trade-off involved; if you make a model ultra-sensitive to ensure
+                you don't miss a single positive case, you almost always end up with a higher false-positive rate, which
+                drags down your specificity. This forced me to think more about how we define the "Gold Standard" or
+                ground truth versus the predictions our model actually spits out.</p>
+            </div>
+            <div class="blog-card-media media-grid">
+              <img src="images/Blogs/dec25-1.png" alt="Notes on sensitivity and specificity for binary classifiers">
+              <img src="images/Blogs/dec25-2.png" alt="Notes on prevalence and its effect on predictive power">
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" id="dec-24-2025">
           <div class="blog-card-header">
             <div>
               <div class="blog-meta">
@@ -59,12 +93,21 @@
 
           <div class="blog-card-content">
             <div class="blog-card-copy">
-              <p>Today I moved deeper into the Python data science stack by working with <strong>NumPy</strong>, <strong>Pandas</strong>, and <strong>Matplotlib</strong>. Instead of just basic array creation, I focused on high-performance vectorization and broadcasting in NumPy to handle complex mathematical operations without slow loops.</p>
-              <p>I also spent time in Pandas doing more advanced data manipulation, specifically focusing on multi-indexing and complex joins to clean up messy datasets for analysis. To wrap it all up, I used Matplotlib to build more than just simple line graphs, working on subplots and customized styling to better visualize how data distributions and correlations actually look. Getting these three libraries to work together really highlighted how a proper pipeline moves from raw data to a finished, visual insight.</p>
+              <p>Today I moved deeper into the Python data science stack by working with <strong>NumPy</strong>,
+                <strong>Pandas</strong>, and <strong>Matplotlib</strong>. Instead of just basic array creation, I
+                focused on high-performance vectorization and broadcasting in NumPy to handle complex mathematical
+                operations without slow loops.</p>
+              <p>I also spent time in Pandas doing more advanced data manipulation, specifically focusing on
+                multi-indexing and complex joins to clean up messy datasets for analysis. To wrap it all up, I used
+                Matplotlib to build more than just simple line graphs, working on subplots and customized styling to
+                better visualize how data distributions and correlations actually look. Getting these three libraries to
+                work together really highlighted how a proper pipeline moves from raw data to a finished, visual
+                insight.</p>
             </div>
             <div class="blog-card-media media-grid">
               <img src="images/Blogs/dec24-1.png" alt="Notebook showing NumPy vectorization and broadcasting examples">
-              <img src="images/Blogs/dec24-2.png" alt="Pandas and Matplotlib workflow with multi-indexing and styled subplots">
+              <img src="images/Blogs/dec24-2.png"
+                alt="Pandas and Matplotlib workflow with multi-indexing and styled subplots">
             </div>
           </div>
         </article>
@@ -82,8 +125,14 @@
 
           <div class="blog-card-content">
             <div class="blog-card-copy">
-              <p>I spent some time today diving into the practical side of data science by playing around with some of its core tools. I used <strong>SPSS</strong> for data management and <strong>JASP</strong> to get a better feel for statistical inference and hypothesis testing. It helped clarify how we handle different data types, like categorical versus continuous variables.</p>
-              <p>I also experimented with <strong>Tableau</strong> to see how to turn raw data into interactive dashboards, which makes it much easier to visualize descriptive stats like the mean, median, and mode. Getting hands-on with these programs really helped me understand the bigger picture of how to analyze trends and correlations without confusing them for causation.</p>
+              <p>I spent some time today diving into the practical side of data science by playing around with some of
+                its core tools. I used <strong>SPSS</strong> for data management and <strong>JASP</strong> to get a
+                better feel for statistical inference and hypothesis testing. It helped clarify how we handle different
+                data types, like categorical versus continuous variables.</p>
+              <p>I also experimented with <strong>Tableau</strong> to see how to turn raw data into interactive
+                dashboards, which makes it much easier to visualize descriptive stats like the mean, median, and mode.
+                Getting hands-on with these programs really helped me understand the bigger picture of how to analyze
+                trends and correlations without confusing them for causation.</p>
             </div>
             <div class="blog-card-media media-grid">
               <img src="images/Blogs/dec23-1.png" alt="Screens showing SPSS data management workflow">
@@ -106,14 +155,20 @@
 
           <div class="blog-card-content">
             <div class="blog-card-copy">
-              <p>I spent today figuring out how AI actually "thinks" using <strong>Neural Networks</strong>. I learned how these models are trained using <strong>gradient descent</strong> to minimize loss and how <strong>backpropagation</strong> keeps the whole system improving.</p>
-              <p>The coolest part was <strong>Computer Vision</strong>. <strong>Convolutional Neural Networks (CNNs)</strong> process images with filters to highlight edges and shapes. I also learned about <strong>RNNs</strong>, which help AI remember what just happened, like when captioning a video or translating a sentence.</p>
+              <p>I spent today figuring out how AI actually "thinks" using <strong>Neural Networks</strong>. I learned
+                how these models are trained using <strong>gradient descent</strong> to minimize loss and how
+                <strong>backpropagation</strong> keeps the whole system improving.</p>
+              <p>The coolest part was <strong>Computer Vision</strong>. <strong>Convolutional Neural Networks
+                  (CNNs)</strong> process images with filters to highlight edges and shapes. I also learned about
+                <strong>RNNs</strong>, which help AI remember what just happened, like when captioning a video or
+                translating a sentence.</p>
             </div>
             <div class="blog-card-media media-grid">
               <img src="images/Blogs/dec22-1.png" alt="Notes on neural networks and gradient descent">
               <img src="images/Blogs/dec22-2.png" alt="Diagram explaining backpropagation and loss minimization">
               <img src="images/Blogs/dec22-3.png" alt="CNN filters highlighting edges and shapes in images">
-              <img src="images/Blogs/dec22-4.png" alt="RNN notes covering sequences for video captioning and translation">
+              <img src="images/Blogs/dec22-4.png"
+                alt="RNN notes covering sequences for video captioning and translation">
             </div>
           </div>
         </article>
@@ -131,12 +186,22 @@
 
           <div class="blog-card-content">
             <div class="blog-card-copy">
-              <p>Today I spent my time into learning how AI handles the "messiness" of the real world. I moved past simple logic into <strong>Uncertainty</strong>, using <strong>Bayes' Rule</strong> and <strong>Bayesian Networks</strong> to calculate probabilities when information is incomplete. I also explored <strong>Optimization</strong>, learning how algorithms like <strong>Simulated Annealing</strong> and <strong>Hill Climbing</strong> find the best solutions in massive search spaces. Finally, I started on <strong>Machine Learning</strong>, covering everything from basic classification (<strong>Perceptrons</strong> and <strong>SVMs</strong>) to <strong>Reinforcement Learning</strong>, where an agent learns through trial and error.</p>
+              <p>Today I spent my time into learning how AI handles the "messiness" of the real world. I moved past
+                simple logic into <strong>Uncertainty</strong>, using <strong>Bayes' Rule</strong> and <strong>Bayesian
+                  Networks</strong> to calculate probabilities when information is incomplete. I also explored
+                <strong>Optimization</strong>, learning how algorithms like <strong>Simulated Annealing</strong> and
+                <strong>Hill Climbing</strong> find the best solutions in massive search spaces. Finally, I started on
+                <strong>Machine Learning</strong>, covering everything from basic classification
+                (<strong>Perceptrons</strong> and <strong>SVMs</strong>) to <strong>Reinforcement Learning</strong>,
+                where an agent learns through trial and error.</p>
             </div>
             <div class="blog-card-media media-grid">
-              <img src="images/Blogs/dec21-1.png" alt="Notes on handling uncertainty in AI with Bayes' Rule and Bayesian Networks">
-              <img src="images/Blogs/dec21-2.png" alt="Notes on optimization methods like simulated annealing and hill climbing">
-              <img src="images/Blogs/dec21-3.png" alt="Notes on machine learning, perceptrons, SVMs, and reinforcement learning">
+              <img src="images/Blogs/dec21-1.png"
+                alt="Notes on handling uncertainty in AI with Bayes' Rule and Bayesian Networks">
+              <img src="images/Blogs/dec21-2.png"
+                alt="Notes on optimization methods like simulated annealing and hill climbing">
+              <img src="images/Blogs/dec21-3.png"
+                alt="Notes on machine learning, perceptrons, SVMs, and reinforcement learning">
             </div>
           </div>
         </article>
@@ -154,10 +219,15 @@
 
           <div class="blog-card-content">
             <div class="blog-card-copy">
-              <p>Today, I dove into the core mechanics of how AI makes decisions. I explored <strong>Search algorithms</strong>, moving from basic pathfinding (BFS/DFS) to optimized search like <strong>A*</strong> and game-playing logic with <strong>Minimax</strong>. I also covered <strong>Knowledge representation</strong>, learning how agents use propositional and first-order logic to "reason" and draw new conclusions from data.</p>
+              <p>Today, I dove into the core mechanics of how AI makes decisions. I explored <strong>Search
+                  algorithms</strong>, moving from basic pathfinding (BFS/DFS) to optimized search like
+                <strong>A*</strong> and game-playing logic with <strong>Minimax</strong>. I also covered
+                <strong>Knowledge representation</strong>, learning how agents use propositional and first-order logic
+                to "reason" and draw new conclusions from data.</p>
             </div>
             <div class="blog-card-media">
-              <img src="images/Blogs/dec20-1.png" alt="Notes from Dec 20, 2025 on search algorithms and knowledge representation">
+              <img src="images/Blogs/dec20-1.png"
+                alt="Notes from Dec 20, 2025 on search algorithms and knowledge representation">
             </div>
           </div>
         </article>
@@ -227,4 +297,5 @@
     });
   </script>
 </body>
+
 </html>
