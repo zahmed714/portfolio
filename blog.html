@@ -48,7 +48,37 @@
   <section id="posts" class="blog-posts">
     <div class="container">
       <div class="blog-list">
-        <article class="blog-card open" id="dec-27-2025">
+        <article class="blog-card open" id="dec-28-2025">
+          <div class="blog-card-header">
+            <div>
+              <div class="blog-meta">
+                <span class="blog-date">Dec 28, 2025</span>
+              </div>
+              <h3 class="blog-card-title">Ensemble Techniques: Bagging & Boosting</h3>
+            </div>
+            <button class="blog-toggle" data-toggle-post aria-expanded="true">Collapse</button>
+          </div>
+
+          <div class="blog-card-content">
+            <div class="blog-card-copy">
+              <p>I spent today exploring <strong>Ensemble Techniques</strong> to see how combining multiple models can
+                lead to much more accurate results than using a single decision tree. I focused specifically on
+                <strong>Bagging</strong> and <strong>Boosting</strong>, which are two different ways to build these
+                "forests" of trees.</p>
+              <p>I spent a good chunk of time on <strong>Bootstrapping</strong>, which involves creating multiple random
+                samples from the original dataset to train different trees. This led into the concept of
+                <strong>Out-of-bag (OOB) error</strong>, a clever way to validate a model while it is still being
+                trained. Since a "bag" or bootstrap sample typically leaves out some data points, you can use those
+                excluded points as a test set for that specific tree. It's an efficient method because it gives you a
+                clear sense of the prediction error without needing a separate, dedicated validation set.</p>
+            </div>
+            <div class="blog-card-media">
+              <img src="images/Blogs/dec28-1.png" alt="Notes on Ensemble Techniques, Bagging, Boosting, and OOB error">
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" id="dec-27-2025">
           <div class="blog-card-header">
             <div>
               <div class="blog-meta">
@@ -89,7 +119,8 @@
               <p>I spent time working on <strong>Decision Trees</strong> through the HarvardX CS109xa course to
                 understand how models make predictions by following a flowchart of logical questions. I learned about
                 using <strong>entropy</strong> to measure the randomness or disorder in a dataset and calculating
-                <strong>information gain</strong> to decide which features provide the best splits.</p>
+                <strong>information gain</strong> to decide which features provide the best splits.
+              </p>
             </div>
             <div class="blog-card-media">
               <img src="images/Blogs/dec26-1.jpg" alt="Notes on Decision Trees, entropy, and information gain">
@@ -114,7 +145,8 @@
                 accuracy score by looking at the conditional probabilities of <strong>sensitivity</strong> and
                 <strong>specificity</strong>. Sensitivity is the probability of a positive test given that the disease
                 is actually present (P(Test + | Disease)), while specificity is the probability of a negative test given
-                the person is healthy (P(Test - | Healthy)).</p>
+                the person is healthy (P(Test - | Healthy)).
+              </p>
               <p>I also looked into how <strong>prevalence</strong>, or the overall probability of the disease in the
                 population (P(Disease)), influences these results and the overall predictive power of the model. It was
                 interesting to see the mathematical trade-off involved; if you make a model ultra-sensitive to ensure
@@ -145,7 +177,8 @@
               <p>Today I moved deeper into the Python data science stack by working with <strong>NumPy</strong>,
                 <strong>Pandas</strong>, and <strong>Matplotlib</strong>. Instead of just basic array creation, I
                 focused on high-performance vectorization and broadcasting in NumPy to handle complex mathematical
-                operations without slow loops.</p>
+                operations without slow loops.
+              </p>
               <p>I also spent time in Pandas doing more advanced data manipulation, specifically focusing on
                 multi-indexing and complex joins to clean up messy datasets for analysis. To wrap it all up, I used
                 Matplotlib to build more than just simple line graphs, working on subplots and customized styling to
@@ -206,11 +239,13 @@
             <div class="blog-card-copy">
               <p>I spent today figuring out how AI actually "thinks" using <strong>Neural Networks</strong>. I learned
                 how these models are trained using <strong>gradient descent</strong> to minimize loss and how
-                <strong>backpropagation</strong> keeps the whole system improving.</p>
+                <strong>backpropagation</strong> keeps the whole system improving.
+              </p>
               <p>The coolest part was <strong>Computer Vision</strong>. <strong>Convolutional Neural Networks
                   (CNNs)</strong> process images with filters to highlight edges and shapes. I also learned about
                 <strong>RNNs</strong>, which help AI remember what just happened, like when captioning a video or
-                translating a sentence.</p>
+                translating a sentence.
+              </p>
             </div>
             <div class="blog-card-media media-grid">
               <img src="images/Blogs/dec22-1.png" alt="Notes on neural networks and gradient descent">
@@ -242,7 +277,8 @@
                 <strong>Hill Climbing</strong> find the best solutions in massive search spaces. Finally, I started on
                 <strong>Machine Learning</strong>, covering everything from basic classification
                 (<strong>Perceptrons</strong> and <strong>SVMs</strong>) to <strong>Reinforcement Learning</strong>,
-                where an agent learns through trial and error.</p>
+                where an agent learns through trial and error.
+              </p>
             </div>
             <div class="blog-card-media media-grid">
               <img src="images/Blogs/dec21-1.png"
@@ -272,7 +308,8 @@
                   algorithms</strong>, moving from basic pathfinding (BFS/DFS) to optimized search like
                 <strong>A*</strong> and game-playing logic with <strong>Minimax</strong>. I also covered
                 <strong>Knowledge representation</strong>, learning how agents use propositional and first-order logic
-                to "reason" and draw new conclusions from data.</p>
+                to "reason" and draw new conclusions from data.
+              </p>
             </div>
             <div class="blog-card-media">
               <img src="images/Blogs/dec20-1.png"
