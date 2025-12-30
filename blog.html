@@ -48,7 +48,35 @@
   <section id="posts" class="blog-posts">
     <div class="container">
       <div class="blog-list">
-        <article class="blog-card open" id="dec-28-2025">
+        <article class="blog-card open" id="dec-29-2025">
+          <div class="blog-card-header">
+            <div>
+              <div class="blog-meta">
+                <span class="blog-date">Dec 29, 2025</span>
+              </div>
+              <h3 class="blog-card-title">Random Forests & Bootstrapping</h3>
+            </div>
+            <button class="blog-toggle" data-toggle-post aria-expanded="true">Collapse</button>
+          </div>
+
+          <div class="blog-card-content">
+            <div class="blog-card-copy">
+              <p>I spent time today looking at <strong>ensemble techniques</strong> to see how combining multiple models
+                can lead to much better predictions than just using one tree. I focused on <strong>bagging</strong> and
+                <strong>boosting</strong>, which are different ways to group models together, like in a <strong>Random
+                  Forest</strong>.</p>
+              <p>I learned about <strong>bootstrapping</strong>, where you create random samples of data to train
+                different versions of a model. This led to <strong>out-of-bag error</strong>, which is a method for
+                testing the model using the data points that were left out of the training sample. It is a really
+                efficient way to validate how accurate a model is without needing a completely separate test set.</p>
+            </div>
+            <div class="blog-card-media">
+              <img src="images/Blogs/dec29-1.png" alt="Notes on Random Forests, bootstrapping, and out-of-bag error">
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" id="dec-28-2025">
           <div class="blog-card-header">
             <div>
               <div class="blog-meta">
@@ -64,13 +92,15 @@
               <p>I spent today exploring <strong>Ensemble Techniques</strong> to see how combining multiple models can
                 lead to much more accurate results than using a single decision tree. I focused specifically on
                 <strong>Bagging</strong> and <strong>Boosting</strong>, which are two different ways to build these
-                "forests" of trees.</p>
+                "forests" of trees.
+              </p>
               <p>I spent a good chunk of time on <strong>Bootstrapping</strong>, which involves creating multiple random
                 samples from the original dataset to train different trees. This led into the concept of
                 <strong>Out-of-bag (OOB) error</strong>, a clever way to validate a model while it is still being
                 trained. Since a "bag" or bootstrap sample typically leaves out some data points, you can use those
                 excluded points as a test set for that specific tree. It's an efficient method because it gives you a
-                clear sense of the prediction error without needing a separate, dedicated validation set.</p>
+                clear sense of the prediction error without needing a separate, dedicated validation set.
+              </p>
             </div>
             <div class="blog-card-media">
               <img src="images/Blogs/dec28-1.png" alt="Notes on Ensemble Techniques, Bagging, Boosting, and OOB error">
